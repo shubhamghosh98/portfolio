@@ -43,11 +43,7 @@ export default function Navbar() {
 
   return (
     <header 
-      className={`fixed top-0 w-full z-50 transition-all duration-300 border-b ${
-        scrolled 
-          ? 'bg-black/80 backdrop-blur-md border-gray-800' 
-          : 'bg-transparent border-transparent'
-      }`}
+      className={`fixed top-0 w-full z-50 transition-all duration-300 border-b ${scrolled ? 'bg-black/80 backdrop-blur-md border-gray-800' : 'bg-transparent border-transparent'}`}
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
@@ -66,11 +62,7 @@ export default function Navbar() {
                 {item.name}
               </a>
             ))}
-          </nav>
-          
-          {/* Theme Toggle and Mobile Menu Button */}
-          <div className="flex items-center space-x-4">
-            {/* Resume Download */}
+            {/* Resume Download Button */}
             <a 
               href="/resume.pdf" 
               download
@@ -79,7 +71,10 @@ export default function Navbar() {
               <span>Resume</span>
               <FaDownload className="ml-2 h-4 w-4" />
             </a>
-            
+          </nav>
+          
+          {/* Theme Toggle and Mobile Menu Button */}
+          <div className="flex items-center space-x-4">
             {/* Mobile Menu Button */}
             <button
               onClick={toggleMenu}
@@ -115,6 +110,7 @@ export default function Navbar() {
                   {item.name}
                 </a>
               ))}
+              {/* Resume Download Button for Mobile */}
               <a 
                 href="/resume.pdf" 
                 download
