@@ -7,7 +7,9 @@ const skills = [
   "API Security Testing",
   "Network Security Testing",
   "Bug Bounties",
-  "Red Teaming"
+  "Red Teaming",
+  "SAST & SCA",
+  "DevSecOps"
 ];
 
 export default function SkillsSection() {
@@ -101,7 +103,7 @@ export default function SkillsSection() {
             </div>
           </motion.div>
           
-          {/* Security Assessment Card */}
+          {/* Shift Left Security */}
           <motion.div 
             className="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-2xl border border-gray-700 transition-all duration-300 hover:-translate-y-2"
             whileHover={{ scale: 1.03 }}
@@ -113,9 +115,9 @@ export default function SkillsSection() {
             <div className="text-indigo-500 mb-4">
               <BarChart3 className="h-10 w-10" />
             </div>
-            <h3 className="text-xl font-semibold mb-2">Security Assessment</h3>
+            <h3 className="text-xl font-semibold mb-2">Shift Left Security</h3>
             <p className="text-gray-400 mb-4">
-              Comprehensive evaluation of systems and networks to identify and address security vulnerabilities.
+              Strong experience in SAST and SCA tooling, secure code reviews, and embedding security into CI/CD pipelines through DevSecOps practices.
             </p>
             <div className="flex flex-wrap gap-2">
               <span className="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full transition-transform duration-300 hover:-translate-y-1">

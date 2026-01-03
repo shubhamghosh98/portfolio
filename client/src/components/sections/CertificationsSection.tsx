@@ -46,11 +46,18 @@ const certifications: Certification[] = [
     tags: ["AppSec"]
   },
   {
+    title: "Certified Network Security Practitioner (CNSP)",
+    issuer: "The SecOps Group",
+    date: "Dec, 2025",
+    certNo: "10810930",
+    tags: ["Network Pentesting"]
+  },
+  {
     title: "Certified Red Team Professional (CRTP)",
     issuer: "Altered Security",
-    date: "In Progress",
-    certNo: "-",
-    tags: ["Red Team"]
+    date: "July, 2025",
+    certNo: "ADLID12316",
+    tags: ["Active Directory Pentesting"]
   },
   {
     title: "Best Ethical Hacker - 2020 & 2021",

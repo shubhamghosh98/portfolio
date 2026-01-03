@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { FaLinkedin, FaGithub, FaTwitter, FaMedium, FaChevronDown } from 'react-icons/fa';
 import profileImage from '../../assets/profile.jpg';
+import resume from "@/assets/resume.pdf";
 
 export default function HeroSection() {
   return (
@@ -67,7 +68,7 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 1.4 }}
           className="text-gray-500 mt-6 max-w-2xl mx-auto text-base md:text-lg leading-relaxed"
         >
-          Passionate about identifying vulnerabilities, strengthening cyber defenses, and making the internet a safer place. Senior Application Security Engineer at Mastercard, specializing in penetration testing of web & mobile apps and APIs as well.
+          Passionate about identifying and remediating vulnerabilities, strengthening cyber defenses, and making the internet a safer place. Senior Application Security Engineer at Barclays with hands-on expertise in web, mobile, and API penetration testing, secure code reviews, SAST and SCA implementation, and driving DevSecOps by integrating security into CI/CD pipelines.
         </motion.p>
          
         {/* Social Icons */}
@@ -131,8 +132,7 @@ export default function HeroSection() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>
           </a>
-          <a 
-            href="/resume.pdf" 
+          <a href={resume} target="_blank" rel="noopener noreferrer" 
             download
             className="px-6 py-3 border border-gray-700 hover:border-indigo-500 text-white font-medium rounded-full transition-colors flex items-center"
           >

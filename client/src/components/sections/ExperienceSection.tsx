@@ -4,9 +4,15 @@ import { Experience } from '@/lib/types';
 
 const experiences: Experience[] = [
   {
+    company: "Barclays PLC",
+    position: "AVP - Application Security Consultant",
+    date: "November, 2025 - Present",
+    tags: ["SAST, SCA & DevSecOps"]
+  },
+  {
     company: "Mastercard",
     position: "Vulnerability Analyst II",
-    date: "January, 2024 - Present",
+    date: "January, 2024 - November, 2025",
     tags: ["Penetration Testing"]
   },
   {

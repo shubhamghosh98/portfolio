@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useTheme } from '@/hooks/useTheme';
 import { Sun, Moon, Menu, X } from 'lucide-react';
 import { FaDownload } from 'react-icons/fa';
+import resume from "@/assets/resume.pdf"
 
 export default function Navbar() {
   const { theme, toggleTheme } = useTheme();
@@ -64,7 +65,7 @@ export default function Navbar() {
             ))}
             {/* Resume Download Button */}
             <a 
-              href="/resume.pdf" 
+              href={resume} target="_blank" rel="noopener noreferrer"
               download
               className="hidden md:flex items-center text-sm text-white bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-full transition-colors"
             >
@@ -112,7 +113,7 @@ export default function Navbar() {
               ))}
               {/* Resume Download Button for Mobile */}
               <a 
-                href="/resume.pdf" 
+                href={resume}
                 download
                 className="flex items-center text-sm text-white bg-indigo-600 hover:bg-indigo-700 px-4 py-3 rounded-full transition-colors mx-4 w-max"
                 onClick={closeMenu}

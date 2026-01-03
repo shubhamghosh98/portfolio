@@ -14,7 +14,8 @@ function App() {
         {/* Use basename to ensure proper routing when deployed on GitHub Pages */}
         <Router base="/portfolio">
           <Route path="/" component={Home} />
-          <Route path="/:rest*" component={NotFound} />  // Catch-all route for undefined paths
+          <Route path="/:rest*" component={NotFound} />  
+          {/* Catch-all route for undefined paths */}
           </Router>
       </TooltipProvider>
     </QueryClientProvider>
